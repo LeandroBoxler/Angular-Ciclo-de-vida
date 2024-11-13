@@ -1,0 +1,12 @@
+<app-addTask>
+    <p>este es el contenido que quiero mostrar</p>
+    <button>precionar para inicializar</button>
+</app-addTask>
+<app-list-task></app-list-task>
+<div> Valor actual
+{{value}}
+
+</div>
+<p *ngIf="changeDetected">cambio detectado</p>
+<button (click)="updateValue()">actualizar valor</button>
+<router-outlet />
